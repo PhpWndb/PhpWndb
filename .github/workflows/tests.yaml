@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+    pull_request:
+        branches: [main]
+    push:
+        branches: [main]
+jobs:
+    docker_tests:
+        runs-on: ubuntu-22.04
+        timeout-minutes: 5
+
+        steps:
+            -   uses: actions/checkout@v3.3.0
+            -   name: Composer cache
+                uses: actions/cache@v3
+                env:
+                    cache-name: cache-composer
+                with:
+                    path: ~/.cache/composer/
+                    key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./composer.json') }}
+                    restore-keys: |
+                        ${{ runner.os }}-build-${{ env.cache-name }}-
+
+            -   name: Composer init
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: '8.1'
+                    coverage: none
+                    tools: composer:v2
+
+            -   run: composer install --ansi
+            -   run: composer phpstan
+            -   run: composer tests
