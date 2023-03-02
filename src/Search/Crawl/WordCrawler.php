@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Search\Crawl;
 
+use LogicException;
 use PhpWndb\Dataset\Model\Data\Synset;
 use PhpWndb\Dataset\Model\Data\Word;
 use PhpWndb\Dataset\Model\RelationPointerType;
 use PhpWndb\Dataset\Search\Data\SynsetSearchEngine;
-use LogicException;
 
 class WordCrawler
 {

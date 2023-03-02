@@ -32,9 +32,11 @@
 	},
 	"require-dev": {
 		"phpstan/phpstan": "^1.9",
-		"phpunit/phpunit": "^10.0"
+		"phpunit/phpunit": "^10.0",
+		"symplify/easy-coding-standard": "^11.2"
 	},
 	"scripts": {
+		"ecs": "vendor/bin/ecs check",
 		"phpstan": "vendor/bin/phpstan analyse --level=max src/ tests/ examples/",
 		"tests": "vendor/bin/phpunit"
 	}

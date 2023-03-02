@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Storage;
 
-use PhpWndb\Dataset\Storage\StreamBinarySearcher;
-use PhpWndb\Dataset\Storage\StringStream;
 use Iterator;
 use PHPUnit\Framework\TestCase;
+use PhpWndb\Dataset\Storage\StreamBinarySearcher;
+use PhpWndb\Dataset\Storage\StringStream;
 
 class StreamBinarySearcherTest extends TestCase
 {
@@ -18,7 +18,7 @@ class StreamBinarySearcherTest extends TestCase
     {
         $searcher = new StreamBinarySearcher(8);
         $stream = new StringStream(
-'
+            '
 a
 bb
 ccc

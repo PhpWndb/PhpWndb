@@ -29,7 +29,9 @@ class DiContainerFactory
             $containerBuilder = $this->createCompiledContainerBuilder();
 
             $phpDumper = new PhpDumper($containerBuilder);
-            $code = $phpDumper->dump(['class' => self::CONTAINER_NAME]);
+            $code = $phpDumper->dump([
+                'class' => self::CONTAINER_NAME,
+            ]);
             \assert(\is_string($code));
 
             $containerConfigCache->write($code, $containerBuilder->getResources());

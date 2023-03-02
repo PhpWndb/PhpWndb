@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Storage;
 
-use PhpWndb\Dataset\Storage\FileStream;
 use PHPUnit\Framework\TestCase;
+use PhpWndb\Dataset\Storage\FileStream;
 
 class FileStreamTest extends TestCase
 {

@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Storage;
 
-use PhpWndb\Dataset\Storage\FileStream;
-use PhpWndb\Dataset\Storage\StringStream;
 use PHPUnit\Framework\TestCase;
+use PhpWndb\Dataset\Storage\StringStream;
 
 class StringStreamTest extends TestCase
 {

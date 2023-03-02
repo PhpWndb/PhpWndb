@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use PhpWndb\Dataset\WordNetProvider;
 use PhpWndb\Dataset\Model\RelationPointerType;
+use PhpWndb\Dataset\WordNetProvider;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 

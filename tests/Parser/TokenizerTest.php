@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Parser;
 
+use Iterator;
+use PHPUnit\Framework\TestCase;
 use PhpWndb\Dataset\Parser\Exception\ParseException;
 use PhpWndb\Dataset\Parser\Tokenizer;
 use PhpWndb\Dataset\Storage\StringStream;
-use Iterator;
-use PHPUnit\Framework\TestCase;
 
 class TokenizerTest extends TestCase
 {

@@ -32,7 +32,7 @@ class StreamBinarySearcher implements StreamSearcher
         $distance = $end - $start;
         $seekPosition = $distance <= $this->blockSize
             ? $start
-            : $start + (int)\floor($distance / 2 - $this->blockSize / 2);
+            : $start + (int) \floor($distance / 2 - $this->blockSize / 2);
 
         $stream->seek($seekPosition);
         $data = $stream->read($this->blockSize);

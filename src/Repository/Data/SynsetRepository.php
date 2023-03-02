@@ -9,7 +9,9 @@ use PhpWndb\Dataset\Model\Index\SyntacticCategory;
 
 class SynsetRepository
 {
-    /** @var array<string, SynsetSource> */
+    /**
+     * @var array<string, SynsetSource>
+     */
     private array $sources = [];
 
     public function __construct(

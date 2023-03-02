@@ -63,7 +63,7 @@ class Tokenizer
                     ? $number
                     : throw $this->createException('decimal integer expected');
             }
-            $number = $number * 10 + (int)$char;
+            $number = $number * 10 + (int) $char;
             ++$charsCount;
         }
 

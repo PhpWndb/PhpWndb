@@ -45,7 +45,7 @@ class RelationPointerTypeMapper
             '<' => RelationPointerType::PARTICIPLE_OF_VERB,
             ';' => RelationPointerType::DOMAIN_OF_SYNSET,
             '-' => RelationPointerType::MEMBER_OF_THIS_DOMAIN,
-			'\\' => $syntacticCategory === SyntacticCategory::ADJECTIVE
+            '\\' => $syntacticCategory === SyntacticCategory::ADJECTIVE
                 ? RelationPointerType::PERTAINYM
                 : RelationPointerType::DERIVED_FROM_ADJECTIVE,
             default => throw new ParseException("Unknown relation pointer type `{$relationPointerType}`."),

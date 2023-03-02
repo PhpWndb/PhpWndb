@@ -4,23 +4,16 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Parser;
 
-use PhpWndb\Dataset\Model\Data\RelationPointerFactory;
-use PhpWndb\Dataset\Model\Data\SynsetFactory;
-use PhpWndb\Dataset\Model\Data\SynsetType;
-use PhpWndb\Dataset\Model\Data\Word;
-use PhpWndb\Dataset\Model\Data\WordFactory;
+use Iterator;
+use PHPUnit\Framework\TestCase;
 use PhpWndb\Dataset\Model\Index\IndexEntryFactory;
 use PhpWndb\Dataset\Model\Index\SyntacticCategory;
 use PhpWndb\Dataset\Model\RelationPointerType;
 use PhpWndb\Dataset\Parser\IndexParser;
 use PhpWndb\Dataset\Parser\RelationPointerTypeMapper;
-use PhpWndb\Dataset\Parser\SynsetParser;
-use PhpWndb\Dataset\Parser\SynsetTypeMapper;
 use PhpWndb\Dataset\Parser\SyntacticCategoryMapper;
 use PhpWndb\Dataset\Parser\TokenizerFactory;
 use PhpWndb\Dataset\Storage\StringStream;
-use Iterator;
-use PHPUnit\Framework\TestCase;
 
 class IndexParserTest extends TestCase
 {

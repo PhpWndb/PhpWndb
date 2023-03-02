@@ -34,6 +34,6 @@ class ArrayCrawler extends ArrayIterator
      */
     public function getLast(): mixed
     {
-        return $this[\count($this) - 1]  ?? throw new Exception('There is no last item.');
+        return $this[\count($this) - 1] ?? throw new Exception('There is no last item.');
     }
 }

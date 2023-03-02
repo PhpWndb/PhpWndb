@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests\Parser;
 
+use Iterator;
+use PHPUnit\Framework\TestCase;
 use PhpWndb\Dataset\Model\Data\RelationPointerFactory;
 use PhpWndb\Dataset\Model\Data\SynsetFactory;
 use PhpWndb\Dataset\Model\Data\SynsetType;
@@ -17,8 +19,6 @@ use PhpWndb\Dataset\Parser\SynsetTypeMapper;
 use PhpWndb\Dataset\Parser\SyntacticCategoryMapper;
 use PhpWndb\Dataset\Parser\TokenizerFactory;
 use PhpWndb\Dataset\Storage\StringStream;
-use Iterator;
-use PHPUnit\Framework\TestCase;
 
 class SynsetParserTest extends TestCase
 {

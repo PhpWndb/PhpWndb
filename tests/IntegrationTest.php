@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Tests;
 
+use PHPUnit\Framework\TestCase;
 use PhpWndb\Dataset\Model\Data\SynsetType;
 use PhpWndb\Dataset\Model\RelationPointerType;
 use PhpWndb\Dataset\WordNetProvider;
-use PHPUnit\Framework\TestCase;
 
 class IntegrationTest extends TestCase
 {

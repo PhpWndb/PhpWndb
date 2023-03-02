@@ -16,8 +16,7 @@ class WordNetProvider
     public function __construct(
         protected readonly ?string $cacheDir = null,
         protected readonly bool $isDebug = false,
-    )
-    {
+    ) {
         $this->containerFactory = new DiContainerFactory();
     }
 

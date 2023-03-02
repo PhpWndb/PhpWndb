@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace PhpWndb\Dataset\Storage;
 
-use PhpWndb\Dataset\Storage\Exception\FileSystemException;
 use InvalidArgumentException;
+use PhpWndb\Dataset\Storage\Exception\FileSystemException;
 
 class FileStream implements Stream
 {
